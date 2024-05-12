@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+<ul>
+{% for dep in departements %}
+
+<li><a href="{{ path('app_salles',{'id':dep.id}) }}">{{ dep.nom }}</a></li>
+
+{% endfor %}
+</ul>
+{% endblock %}

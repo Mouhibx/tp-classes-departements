@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salles{% endblock %}
+
+{% block body %}
+<ul>
+{% for salle in salles %}
+
+<li>{{ salle.nom }}</li>
+
+{% endfor %}
+</ul>
+{% endblock %}

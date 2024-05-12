@@ -19,7 +19,7 @@ class SalleDeClasseType extends AbstractType
             ->add('localisation')
             ->add('departement', EntityType::class, [
                 'class' => Departement::class,
-'choice_label' => 'id',
+'choice_label' => 'nom',
             ])
         ;
     }
